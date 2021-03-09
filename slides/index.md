@@ -9,10 +9,6 @@ class:
 paginate: true
 _paginate: false
 footer: 'github.com/crazy-max'
-style: |
-  footer {
-    color: #404040;
-  }
 ---
 
 <style scoped>a { color: #404040; }</style>
@@ -26,6 +22,7 @@ style: |
 
 ---
 
+<style scoped>a { color: #404040; }</style>
 ![bg 40% opacity blur](assets/docker.png)
 
 # What is Docker buildx?
@@ -49,6 +46,7 @@ style: |
 
 ---
 
+<style scoped>a { color: #404040; }</style>
 ![bg 40% opacity blur](assets/docker.png)
 
 # A buildx command in the wild
@@ -83,6 +81,7 @@ ul{ list-style-type: none; }
 
 ---
 
+<style scoped>a { color: #404040; }</style>
 ![bg 40% opacity blur](assets/docker.png)
 
 # With `bake`
@@ -108,6 +107,7 @@ ul{ list-style-type: none; }
 
 ---
 
+<style scoped>a { color: #404040; }</style>
 ![bg 40% opacity blur](assets/docker.png)
 
 ## bake definition
@@ -128,6 +128,7 @@ ul{ list-style-type: none; }
 ---
 
 <style scoped>
+a { color: #404040; }
 code{ font-size: 70%; }
 </style>
 ![bg 40% opacity blur](assets/docker.png)
@@ -166,18 +167,16 @@ target "image-all" {
 
 ---
 
+<style scoped>a { color: #404040; }</style>
 ![bg 40%](assets/demo-time.jpg)
 
 <!-- Let's jump to the demo! -->
 
 ---
 
-<style scoped>a { color: #c0c0c0; }</style>
+<style scoped>a { color: #404040; }</style>
 ![bg 100% opacity blur](https://avatars1.githubusercontent.com/u/1951866?v=4)
 
-## Thanks for your time!
-
-github.com/crazy-max
-twitter.com/crazyws
+# Thanks for your time!
 
 <!-- The design of bake is in very early stages and we are looking for feedback from users -->
