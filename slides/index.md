@@ -58,7 +58,7 @@ ul{ list-style-type: none; }
 
 * `docker buildx build \`
   * `--push \`
-  * `--cache-from "type=registry,ref=foo/app" \`
+  * `--cache-from "type=registry,ref=foo/myapp" \`
   * `--cache-to "type=inline" \`
   * `--platform "linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64" \`
   * `--label "org.opencontainers.image.title=myapp" \`
@@ -93,7 +93,7 @@ ul{ list-style-type: none; }
 
 * `docker buildx bake \`
   * **`--push`**
-  * ~~`--cache-from "type=registry,ref=foo/app" \`~~
+  * ~~`--cache-from "type=registry,ref=foo/myapp" \`~~
   * ~~`--cache-to "type=inline" \`~~
   * ~~`--platform "linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64" \`~~
   * ~~`--label "org.opencontainers.image.title=myapp" \`~~
@@ -145,7 +145,7 @@ group "default" {
 target "image" {
   context = "."
   dockerfile = "./main.Dockerfile"
-  cache-from = "type=registry,ref=foo/app"
+  cache-from = "type=registry,ref=foo/myapp"
   cache-to = "type=inline"
   labels = [
     "org.opencontainers.image.title=myapp",
