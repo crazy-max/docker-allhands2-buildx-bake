@@ -105,6 +105,7 @@ ul { list-style-type: none; }
   * ~~`.`~~
 
 <!-- As you can see bake will remove all the constraint related to the flags that we need for our build. -->
+<!-- Also you don't actually need --push as well but we recommend it as it is a simple way to switch in command line in your CI for example (PR vs master branch) -->
 
 ---
 
