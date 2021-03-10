@@ -16,7 +16,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: Build docs
+        name: Build slides
         uses: docker/bake-action@v1
         with:
           targets: slides
