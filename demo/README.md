@@ -21,6 +21,14 @@ docker buildx bake artifact
 docker buildx bake artifact-all
 ```
 
+## GitHub Actions
+
+GitHub Action workflow available in [.github/workflows/build.yml](../.github/workflows/build.yml)
+
+* Using [docker/bake-action](https://github.com/docker/bake-action) to:
+  * Publish artifacts to [GitHub Releases](https://github.com/crazy-max/docker-buildx-bake-demo/releases)
+  * Publish multi-platform Docker image to [Docker Hub](https://hub.docker.com/r/crazymax/bake-demo/tags?page=1&ordering=last_updated) and [GHCR](https://github.com/users/crazy-max/packages/container/package/bake-demo)
+
 ## License
 
 MIT. See `LICENSE` for more details.
