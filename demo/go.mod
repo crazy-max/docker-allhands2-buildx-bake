@@ -1,4 +1,4 @@
-module myapp
+module bake-demo
 
 go 1.16
 
