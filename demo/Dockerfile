@@ -8,6 +8,7 @@ WORKDIR /src
 
 FROM base AS build
 ARG TARGETPLATFORM
+ARG GIT_REF
 RUN --mount=type=bind,source=.,target=/src,rw \
   --mount=type=cache,target=/root/.cache/go-build \
   --mount=type=cache,target=/go/pkg/mod \
