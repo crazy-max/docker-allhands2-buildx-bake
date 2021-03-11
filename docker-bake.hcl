@@ -1,3 +1,8 @@
+// Special target: https://github.com/crazy-max/ghaction-docker-meta#bake-definition
+target "ghaction-docker-meta" {
+  tags = ["bake-demo:local"]
+}
+
 group "default" {
   targets = ["slides"]
 }
@@ -13,12 +18,11 @@ target "context" {
 }
 
 target "image" {
-  inherits = ["context"]
+  inherits = ["context", "ghaction-docker-meta"]
 }
 
 target "image-local" {
   inherits = ["image"]
-  tags = ["bake-demo:local"]
   output = ["type=docker"]
 }
 
