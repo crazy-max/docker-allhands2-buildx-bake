@@ -20,8 +20,6 @@ footer a { color: #404040; }
 
 ### First use of `buildx bake` in your workflow.
 
-<!-- This is presenter note. You can write down notes through HTML comment. -->
-
 ---
 
 <style scoped>
