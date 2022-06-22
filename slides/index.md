@@ -156,12 +156,12 @@ target "image" {
   inherits = ["tag"]
   context = "."
   dockerfile = "./main.Dockerfile"
-  cache-from = "type=registry,ref=foo/myapp"
-  cache-to = "type=inline"
-  labels = [
-    "org.opencontainers.image.title=myapp",
-    "org.opencontainers.image.title=https://github.com/foo/myapp"
-  ]
+  cache-from = ["type=registry,ref=foo/myapp"]
+  cache-to = ["type=inline"]
+  labels = {
+    "org.opencontainers.image.title" = "myapp"
+    "org.opencontainers.image.ref" = "https://github.com/foo/myapp"
+  }
   tags = [
     "foo/myapp:latest"
   ]
